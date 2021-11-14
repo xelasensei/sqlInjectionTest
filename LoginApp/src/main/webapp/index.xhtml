@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<xhtml xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>MI SQLMap</title>
+    </h:head>
+    <h:body>
+        <h:outputLabel value="Login" />
+        
+        <h:form prependId="false">
+            <p:outputLabel value="Usuario:" />
+            <p:inputText id="usuario" value="#{miBean.usuario}" />
+            
+            <p:outputLabel value="Contrasenna:" />
+            <p:inputText id="contrasenna" value="#{miBean.contrasenna}" />
+            
+            <br/>
+            <p:commandButton id="loguearse" value="Ingresar" action="#{miBean.loguearse}">
+            
+            </p:commandButton>
+        </h:form>
+        
+    </h:body>
+</xhtml>
+
